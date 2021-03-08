@@ -21,6 +21,15 @@
   background-color: #006d69;
   width: 100vw;
 }
+.burger {
+  display: none;
+  font-size: 40px;
+  cursor: pointer;
+}
+.burger:hover {
+  font-size: 41px;
+  color: #0d319b;
+}
 .list {
   position: absolute;
   top: 11px;
@@ -81,19 +90,26 @@
   font-size: 20px;
   background-color: #0d319b;
   color: aliceblue;
-  text-decoration: underline;
-  padding: 15px;
+
+  padding: 10px;
 }
 .aboutMe {
-  border: solid #0d319b;
+  /*position: relative;
+  top: 10vh;*/
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+  min-height: 100vh;
+}
+.aboutContent {
+  height: 70%;
+  border: solid #02b5ae;
   border-radius: 24px;
-  position: relative;
-  top: 10vh;
-  min-height: 90vh;
-  margin: auto 10rem;
-  padding: 3rem;
+  margin: 30px 200px;
+  padding: 40px;
   text-align: center;
 }
+
 .aboutTitle:hover {
   color: #02b5ae;
 }
@@ -113,34 +129,372 @@
 
   font-size: 38px;
   text-decoration: underline;
+  text-transform: uppercase;
 }
 .aboutMe p {
   font-size: 25px;
+  margin-bottom: 50px;
 }
 /*services section */
 
 .services {
+  color: rgb(223, 223, 223);
   width: 100%;
-  margin-top: 7em;
-  background-color: greenyellow;
+  margin-top: 20px;
   text-align: center;
   height: 90vh;
-  background-image: url("../img/services1.jpg");
-  background-attachment: fixed;
+  background-image: url("../img/services3.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+}
+.serviceTitle {
+  display: inline-block;
+  border: solid 2px white;
+  text-transform: uppercase;
+  padding: 10px;
+  margin-top: 50px;
+  font-size: 38px;
+  text-decoration: underline;
+}
+.servicesContainer {
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  padding: 2rem 2rem;
+}
+.relaxing,
+.tissue {
+  margin: 2rem;
+  width: 40%;
+  height: 40%;
+  border: solid #02b5ae;
+  border-radius: 10px;
+  background-color: transparent;
+  padding: 1rem;
+}
+.relaxing span,
+.tissue span {
+  font-weight: bolder;
+  font-size: 25px;
+  text-decoration: underline;
+}
+.relaxing li,
+.tissue li {
+  margin: 15px auto;
 }
 
 /*services section */
 
 /*contect me*/
 
-.contactMe {
+.footer {
+  position: relative;
   width: 100%;
-  height: 50vh;
-  background-color: #000;
-  color: white;
+  height: 100%;
+  background-image: linear-gradient(to right, #4facfe 0%, #00f2fe 100%);
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+}
+.deg-footer {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+}
+.eje-z-footer {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+.footer-content {
+  width: 90%;
+  padding-top: 50px;
+  margin: auto;
+}
+.footer-title {
+  width: 50%;
+  margin: auto;
+  border: 2px solid #fff;
+  padding: 15px;
+}
+.footer-title h2 {
+  color: #fff;
+  font-size: 30px;
+  font-weight: normal;
+  text-align: center;
+  margin-bottom: 10px;
+}
+.footer-title hr {
+  width: 80%;
+  margin: auto;
+}
+.form-content {
+  width: 60%;
+  background: #fff;
+  border-radius: 20px;
+  border: 2px solid #02b5ae;
+  margin: 30px auto 0px;
+  padding: 10px;
+  margin-bottom: 50px;
+}
+#form {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+#form label {
+  text-align: center;
+  color: black;
+  font-size: 22px;
+  margin: 30px 0px 10px 0px;
+}
+#form input {
+  width: 90%;
+  height: 40px;
+  margin: auto;
+  border: 2px solid #02b5ae;
+  border-radius: 10px;
+  outline: none;
+  text-align: center;
+  font-size: 17px;
+  color: var(--white);
+}
+#form textarea {
+  width: 90%;
+  margin: auto;
+  height: 200px;
+  border: 2px solid #02b5ae;
+  border-radius: 10px;
+  outline: none;
+  font-size: 15px;
+  color: var(--white);
+  padding: 20px;
+}
+.send {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin: 40px 0px;
+}
+.send button {
+  width: 120px;
+  height: 40px;
+  background: #02b5ae;
+  border-radius: 24px;
+  border: none;
+  outline: none;
+  font-size: 22px;
+  color: #fff;
+  text-align: center;
+  margin-top: 20px;
+  cursor: pointer;
+  transition: 0.5s;
+}
+.send button:hover {
+  background: #0d319b;
+}
+
+.footer-text {
+  position: relative;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 60px;
+  background: rgba(0, 0, 0, 0.8);
+  border-top: 5px solid #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.footer-text p {
+  color: #fff;
+  font-size: 25px;
 }
 
 /*contect me*/
+
+@media screen and (max-width: 1024px) {
+  .headerName {
+    position: absolute;
+    top: 50%;
+    left: 35%;
+  }
+  .form-content {
+    width: 70%;
+  }
+}
+@media screen and (max-width: 930px) {
+  .headerName {
+    position: absolute;
+    top: 50%;
+    left: 32%;
+  }
+  .relaxing,
+  .tissue {
+    padding: 10px;
+    margin: 0px 10px 10px;
+  }
+  .aboutContent {
+    margin: 30px 100px;
+  }
+  .form-content {
+    margin: 50px auto;
+    padding: 10px;
+    margin-bottom: 150px;
+  }
+  .send {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin: 5px 0px;
+  }
+  .form-content {
+    width: 80%;
+  }
+}
+
+@media screen and (max-width: 769px) {
+  .headerName {
+    position: absolute;
+    top: 50%;
+    left: 28%;
+  }
+  .aboutMe p {
+    font-size: 23px;
+    margin-bottom: 25px;
+  }
+  .form-content {
+    width: 90%;
+  }
+  .aboutContent {
+    margin: 30px 75px;
+    padding: 35px;
+  }
+}
+@media screen and (max-width: 600px) {
+  .headerName {
+    position: absolute;
+    top: 50%;
+    left: 22%;
+  }
+  .form-content {
+    width: 95%;
+  }
+  .aboutMe p {
+    font-size: 20px;
+    margin-bottom: 20px;
+  }
+  .aboutContent {
+    margin: 30px 50px;
+    padding: 35px;
+  }
+  .relaxing,
+  .tissue {
+    margin: 10px;
+    width: 80%;
+    padding: 5px;
+  }
+  .footer-title {
+    padding: 5px;
+  }
+  .footer-text p {
+    color: #fff;
+    font-size: 20px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .headerName {
+    left: 16%;
+  }
+  .form-content {
+    width: 98%;
+  }
+  .aboutMe p {
+    font-size: 18px;
+    margin-bottom: 18px;
+  }
+  .aboutContent {
+    margin: 30px 20px;
+    padding: 35px;
+  }
+  .services {
+    height: 100%;
+  }
+  .servicesContainer {
+    display: inline-block;
+    padding: 20px;
+  }
+  .relaxing,
+  .tissue {
+    margin: 5px;
+    width: 100%;
+    padding: 10px;
+  }
+  .headerName span {
+    font-size: 55px;
+  }
+  .footer-text p {
+    font-size: 12px;
+  }
+  .footer-title h2 {
+    font-size: 25px;
+  }
+}
+@media screen and (max-width: 320px) {
+  .headerName {
+    left: 12%;
+  }
+  .headerName span {
+    font-size: 50px;
+  }
+  .headerName p {
+    font-size: 25px;
+  }
+  .form-content {
+    width: 100%;
+  }
+  .aboutMe p {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+  .aboutContent {
+    margin: 5px 5px;
+    padding: 5px;
+    border: none;
+  }
+  .relaxing,
+  .tissue {
+    margin: 10px 2px;
+    width: 100%;
+    padding: 1px;
+  }
+  .servicesContainer {
+    display: inline-block;
+    padding: 5px;
+  }
+  .services {
+    height: 100%;
+  }
+  .serviceTitle {
+    padding: 5px;
+    margin-top: 20px;
+    font-size: 30px;
+  }
+  #form label {
+    font-size: 18px;
+    margin: 10px 0px 5px 0px;
+  }
+  #form input {
+    width: 95%;
+    height: 35px;
+  }
+  #form textarea {
+    width: 95%;
+    height: 150px;
+  }
+  .footer-title h2 {
+    font-size: 20px;
+  }
+}
