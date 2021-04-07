@@ -12,83 +12,92 @@
     <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
 
     <!--Css Stylesheet-->
-    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/style2.css">
 
 </head>
 <body>
-    <div class="header">
+    <header class="header">
         <div class="menu">
-            <p class="name">M.G</p>
+            <div class="name">
+                <h1 >M.G</h1>
+            </div>
+            
             <div class="burger">
-                
                 <i class="fas fa-bars" id="navBar"></i>
                 <!--<i class="fas fa-times"></i> -->
-
-            </div>
-            
-            <ul class="list">
-                <li id="home">Home</li>
-                <li id="about">About Me</li>
-                <li id="service">Services</li>
-                <li id="contact">Contact Me</li>
-            </ul>
-        </div>
+            </div>   
+            <nav>
+                <ul class="list">
+                    <li id="home">Home</li>
+                    <li id="about">About Me</li>
+                    <li id="service">Services</li>
+                    <li id="contact">Contact Me</li>
+                </ul>
+            </nav>      
+        </div> <!---->
         <div class="headerName">
-            <span>Marco Giler</span>
+            <h1>Marco Giler</h1>
             <p>Massage therapist</p>
-            <a href="#" id="contactBtn" >Contact Me</a>
-            
-
+            <a id="contactBtn" >Contact Me</a>
         </div>
-    </div>
-    <div class="aboutMe">
+    </header>
+
+
+    <section class="aboutMe">
         <div class="aboutContent">
-        <i class="fas fa-user-tie"></i>
-        <p class="aboutTitle">About Me</p>
-        <p>Hi! My name is <span>Marco Giler.</span> As a licensed
-         massage therapist, it is my goal to help you in your wellness journey.</p>
-        <p>What do I mean by "wellness journey"? Many people believe
-             massage to be a luxury, when in fact it is a necessity.
-            It is an essential part of what we need to recharge
-            and keep going in life. Whether it's through a relaxation 
-            massage or deep tissue session, I make it a priority to reach 
-            my client's goals and needs.</p>
+            <i class="fas fa-user-tie"></i>
+                <h1 class="aboutTitle">About Me</h1>
+                <p>Hi! My name is <span>Marco Giler.</span> As a licensed
+                massage therapist, it is my goal to help you in your wellness journey.</p>
+                <p>What do I mean by "wellness journey"? Many people believe
+                    massage to be a luxury, when in fact it is a necessity.
+                    It is an essential part of what we need to recharge
+                    and keep going in life. Whether it's through a relaxation 
+                    massage or deep tissue session, I make it a priority to reach 
+                    my client's goals and needs.</p>
         </div>
-    </div>
-
-
-
+    </section>
     <!--services-->
     <section class="services">
-        <p class="serviceTitle">services</p>
-        <div class="servicesContainer">
-            <div class="relaxing">
-                <span>Relaxing</span>
-                <p>This is a full body massage for relaxation by providing light to medium pressure. It improves blood and lymph
-                circulation. Additionally, this massage helps relieve stress and chronic pain.</p>
-                <p>60/90 Minutes</p>
+        <h1 class="serviceTitle">services</h1>
+            <div class="servicesContainer">
+                <div class="service">
+                    <span>Relaxing</span>
+                    <p>This is a full body massage for relaxation by providing light to medium pressure. It improves blood and lymph
+                    circulation. Additionally, this massage helps relieve stress and chronic pain.</p>
+                    <p class="time">60 / 90 Minutes</p>
+                    
+                </div>
+                <div class="service">
+                    <span>Deep Tissue</span>
+                    <p>This massage is for clients who prefer medium to heavy pressure. It provides relief from muscle tension, chronic aches
+                    and pains, and also loosens scar tissue.</p>
+                    <p class="time">60 / 90 minutes</p>
                 
+                </div>
+                <div class="service">
+                    <span>Stress Relief Massage</span>
+                    <p>This is a 30 minute stress massage with light to medium pressure. It focuses on the back, neck, and rear shoulders.
+                    Clients may extend this service to 45 minutes and include their chest, anterior shoulders, and arms.</p>
+                    <p class="time">30 / 45 minutes</p>
+                
+                </div>
+                <div class="service">
+                    <span>Legs Plus Massage</span>
+                    <p>This is a massage with light to medium pressure. It’s primary goal is to relax tight muscles of the leg, thigh, and
+                    gluteal region. This massage also incorporates the lower back and feet.</p>
+                    <p class="time">45 minutes</p>
+                
+                </div>
             </div>
-            <div class="tissue">
-                <span>Deep Tissue</span>
-                <p>This massage is for clients who prefer medium to heavy pressure. It provides relief from muscle tension, chronic aches
-                and pains, and also loosens scar tissue.</p>
-                <p>60/90 minutes</p>
-               
-            </div>
-        </div>
 
     </section>
     <!--services-->
 
 <!--Contact -->
 <footer class="footer">
-    <div class="deg-footer"></div>
-    <div class="eje-z-footer">
-        <div class="footer-content">
-            <div class="footer-title">
-                <h2>Contact Me</h2>
-                <hr>
+            <div class="footerTitle">
+                <h1>Contact Me</h1>
             </div>
             <div class="form-content">
                 <form id="form">
@@ -105,9 +114,7 @@
                 </form>
                 
             </div>
-            
-        </div>
-    </div>
+   
     <div class="footer-text">
                 <p>&copy;Marco Giler - 2021 | All Rights Reserved</p>
             </div>

@@ -1,0 +1,233 @@
+* {
+  font-family: "Roboto Slab", serif;
+  box-sizing: border-box;
+  font-size: 18px;
+}
+:root {
+  --lightBlue: #1e90ff; /*#02b5ae*/
+  --blueGreen: #006d69;
+}
+/*header section start***************
+********************************/
+.header {
+  background-image: url("../img/header2.jpg");
+  background-position: center; /**/
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+.menu {
+  display: flex;
+  justify-content: space-between;
+  font-size: 2.5rem;
+  color: white;
+  background-color: var(--blueGreen); /*#006d69;*/
+  font-weight: 600;
+  width: 100%;
+}
+.name h1 {
+  border-radius: 50%;
+  margin: 0.5rem 1.5rem;
+  background-color: grey;
+  padding: 1rem 1rem;
+  font-size: 2rem;
+  text-transform: uppercase;
+  font-family: "Dancing Script", cursive;
+}
+.list {
+  display: flex;
+}
+.list li {
+  list-style: none;
+  margin: 1rem 1.8rem;
+  cursor: pointer;
+}
+
+.list li:hover {
+  color: white;
+  font-weight: 550;
+}
+
+.burger i {
+  font-size: 2.5rem;
+  cursor: pointer;
+  position: absolute;
+  top: 30px;
+  right: 50px;
+  display: none;
+}
+.burger:hover i {
+  color: #0d319b;
+}
+
+.headerName {
+  text-align: center;
+  color: white;
+  height: 90%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.headerName h1 {
+  font-family: "Dancing Script", cursive;
+  font-size: 5rem;
+  margin-bottom: 0;
+}
+.headerName p {
+  text-decoration: underline;
+  margin-top: 0;
+  font-size: 2rem;
+}
+.headerName a {
+  background-color: #02b5ae;
+  padding: 0.5rem;
+  border-radius: 24px;
+  text-decoration: none;
+  color: black;
+  width: 8em;
+}
+
+.headerName a:hover {
+  font-weight: 500;
+  background-color: #006d69;
+  color: aliceblue;
+}
+
+/*header section end***************
+********************************/
+
+/*about section begin***************
+********************************/
+.aboutMe {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+}
+.aboutMe p {
+  font-size: 1.5rem;
+  margin-bottom: 50px;
+}
+.aboutMe span {
+  font-weight: bold;
+  color: var(--lightBlue);
+  font-size: 1.5rem;
+}
+.aboutContent {
+  width: 75%;
+  border: 2px solid var(--lightBlue);
+  border-radius: 24px;
+  padding: 2.5rem;
+  margin: 2rem;
+}
+.aboutMe i {
+  font-size: 45px;
+  color: rgb(99, 99, 99);
+  margin-bottom: 0;
+}
+.aboutTitle {
+  margin-top: 0;
+  margin-bottom: 2rem;
+  font-size: 1.7rem;
+  text-decoration: underline;
+  text-transform: uppercase;
+}
+/*about section end***************
+********************************/
+
+/*********************************
+**Services Section begin**********/
+.services {
+  background-image: linear-gradient(to top, #cfd9df 0%, #e2ebf0 100%);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.serviceTitle {
+  color: black;
+  letter-spacing: 0.15rem;
+  font-weight: 900;
+
+  text-transform: uppercase;
+  padding: 0.8rem;
+  margin-top: 3rem;
+  font-size: 2rem;
+
+  width: 25%;
+  text-align: center;
+  border-bottom: 3px solid var(--blueGreen);
+}
+.servicesContainer {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-items: center;
+  padding: 2rem 2rem;
+}
+.service {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  margin: 2rem;
+  width: 40%;
+  min-height: 400px;
+  border: solid var(--blueGreen) 3px;
+  border-radius: 20%;
+  background-color: transparent;
+  padding: 1rem;
+  background-color: white;
+  box-shadow: 0 0 0.85rem var(--blueGreen);
+  cursor: pointer;
+}
+.service:hover {
+  box-shadow: 0 0 1.3rem var(--blueGreen);
+  border: solid var(--lightBlue) 3px;
+}
+.service span {
+  font-weight: bolder;
+  font-size: 2.2rem;
+  font-family: "Dancing Script", cursive;
+  font-weight: 999;
+  margin-bottom: 1.5rem;
+}
+.service p {
+  font-size: 1.2rem;
+}
+.time {
+  text-decoration: underline;
+}
+.service li {
+  margin: 15px auto;
+}
+
+/*Services section end************
+********************************/
+
+/********************************
+*Contact Me section begin*******/
+.footer {
+  background-image: url("../img/services3.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.footerTitle h1 {
+  color: #fff;
+  font-size: 2rem;
+  border-bottom: white 2px solid;
+  width: 100%;
+}
+
+/*contactMe End section end******
+********************************/
